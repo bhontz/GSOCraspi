@@ -1,4 +1,5 @@
 ﻿**GSOC Raspberry Pi "Program in a box"** 
+[GSOC Program-in-a-box](https://github.com/bhontz/GSOCraspi/GSOCRasPiProgramInABox.png)
 
 The files below are included within the three-ring binder found within the GSOC Raspberry Pi "Program in a box":
 
