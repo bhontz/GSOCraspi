@@ -9,6 +9,9 @@ The files below are included within the three-ring binder found within the GSOC 
 **GSOC Raspberry Pi - LED light project.pdf:**
 This is "ground zero" of Raspberry Pi projects, have the girls attempt at least one of the two projects contained within.  Note that neither of the two projects listed within require WiFi connectivity.
 
+**GSOC Raspberry Pi - Photobooth.pdf**
+Set up the Raspberry Pi CAMERA (found in the small white box within the Program-In-A-Box) and use python coding to create a PHOTOBOOTH and a SLIDESHOW to show your photobooth images!
+
 **GSOC Raspberry Pi Wifi Connectivity Instructions.pdf**
  If you would like WiFi connectivity for a project (e.g. build a weather station) or for your own experimenting, please follow these instructions.
 
