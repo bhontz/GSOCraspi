@@ -12,10 +12,15 @@ This is "ground zero" of Raspberry Pi projects, have the girls attempt at least 
 **GSOC Raspberry Pi - Photobooth.pdf**
 Set up the Raspberry Pi CAMERA (found in the small white box within the Program-In-A-Box) and use python coding to create a PHOTOBOOTH and a SLIDESHOW to show your photobooth images!
 
+**GSOC Raspberry Pi RockPaperScissors.pdf**
+Requires at least TWO Raspberry Pis to complete, this coding project introduces client-server computing using a simple rock-paper-scissors game.  See if you can beat the server!
+
 **GSOC Raspberry Pi Wifi Connectivity Instructions.pdf**
  If you would like WiFi connectivity for a project (e.g. build a weather station) or for your own experimenting, please follow these instructions.
 
 **GSOC Raspberry Pi Web Serving Weather Station.pdf**
 A more complicated project which should only be undertaken after completing the LED light project.  Recommended for Cadettes, Seniors and Ambassadors.  Girls will configure a web page that will display data from a humidity and temperature sensor.  The Raspberry Pi is then configured as a web page so the results can be displayed on a phone or laptop connected to the same WiFi network.
+
+Note that the CODE folder contains examples of coding resources used in the projects documented above.
 
 > Written with [StackEdit](https://stackedit.io/).
