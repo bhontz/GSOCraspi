@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors!</title>
+</head>
+
+<script>
+    var yourPick = "nothing";
+
+    function myPick(weapon) {
+        myRequest.send();
+        document.getElementById('your-selection').innerHTML = weapon;
+        yourPick = weapon;
+    }
+
+    var myRequest = new XMLHttpRequest();
+    myRequest.open('GET', 'http://192.168.1.25:8080/rps');
+    myRequest.onreadystatechange = function () { 
+        if (myRequest.readyState === 4) {
+            var serverPick = myRequest.responseText;
+            serverPick = serverPick.split('"').join('').trim();
+            document.getElementById('server-selection').innerHTML = serverPick;
+
+            if (serverPick == yourPick) {
+                document.getElementById("winnerIs").innerHTML = "It's a TIE!";
+
+            } else if (serverPick == "scissors" && yourPick == "paper") {
+                document.getElementById("winnerIs").innerHTML = "Server wins!";
+
+            } else if (serverPick == "paper" && yourPick == "rock") {
+                document.getElementById("winnerIs").innerHTML = "Server wins!";
+
+            } else if (serverPick == "rock" && yourPick == "scissors") {
+                document.getElementById("winnerIs").innerHTML = "Server wins!";
+
+            } else {
+                document.getElementById("winnerIs").innerHTML = "You win!";            
+            }
+        }
+    }
+</script>
+
+<body>
+    <h1>It's ON! <button onclick="location.reload();">New Game</button></h1>
+    <div><img src="images/rock-scissors-paper-game-rules.png" width="400"></div>
+    <button onclick="myPick('rock');"><img src="images/rock.jpg"></button>
+    <button onclick="myPick('paper');"><img src="images/paper.jpg"></button>
+    <button onclick="myPick('scissors');"><img src="images/scissors.jpg"></button> 
+    </br>
+    <h3>Server: <span id="server-selection"></span></h3>
+    <h3>You: <span id="your-selection"></span></h3>
+    <h2>Winner: <span id="winnerIs"></span></h2>
+</body>
+
+</html>
