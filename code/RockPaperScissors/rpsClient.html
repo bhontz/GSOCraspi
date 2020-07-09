@@ -16,7 +16,11 @@
     }
 
     var myRequest = new XMLHttpRequest();
-    myRequest.open('GET', 'http://192.168.1.25:8080/rps');
+    //
+    // * * * HEY GIRLS, REPLACE XXX.XXX.XXXX IN THE LINE BELOW * * *
+    // * * * WITH YOUR SERVER'S IP ADDRESS ! * * *
+    //
+    myRequest.open('GET', 'http://192.168.1.31:8080/rps');
     myRequest.onreadystatechange = function () { 
         if (myRequest.readyState === 4) {
             var serverPick = myRequest.responseText;
